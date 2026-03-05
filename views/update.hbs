@@ -1,0 +1,15 @@
+{{> list}}
+<div class="actions">
+    <form method="POST" class="edit-form" id="updateForm">
+        <input type="hidden" name="id" value="{{contact.id}}">
+        <div class="inputs-row active-edit">
+            <input type="text" name="name" id="editName" value="{{contact.name}}" required>
+            <input type="text" name="phone" id="editPhone" value="{{contact.phone}}" required>
+        </div>
+        <div class="buttons-row three-btns">
+            <button type="submit" formaction="/Update" class="btn">Изменить</button>
+            <button type="submit" formaction="/Delete" class="btn" id="btnDelete">Удалить</button>
+            {{cancelBtn}}
+        </div>
+    </form>
+</div>

@@ -1,0 +1,13 @@
+{{> list}}
+<div class="actions">
+    <form action="/Add" method="POST" class="edit-form">
+        <div class="inputs-row">
+            <input type="text" name="name" placeholder="Фамилия, имя, отчество" required>
+            <input type="text" name="phone" placeholder="Телефон" required>
+        </div>
+        <div class="buttons-row">
+            <button type="submit" class="btn">Добавить</button>
+            {{cancelBtn}}
+        </div>
+    </form>
+</div>

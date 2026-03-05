@@ -1,0 +1,172 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.window-container {
+    width: 600px;
+    background: white;
+    border: 2px solid #666;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.window-header {
+    background: #e0e0e0;
+    padding: 5px 10px;
+    border-bottom: 2px solid #666;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 5px;
+    border: 1px solid #999;
+}
+
+.red {
+    background: #ff5f56;
+}
+
+.yellow {
+    background: #ffbd2e;
+}
+
+.green {
+    background: #27c93f;
+}
+
+.tab {
+    width: 80px;
+    height: 15px;
+    background: white;
+    border: 1px solid #666;
+    border-bottom: none;
+    border-radius: 5px 5px 0 0;
+    position: absolute;
+    bottom: -2px;
+    left: 80px;
+}
+
+.url-bar {
+    padding: 5px 10px;
+    border-bottom: 2px solid #666;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #666;
+}
+
+.url-bar input {
+    flex-grow: 1;
+    border: 1px solid #ccc;
+    height: 20px;
+}
+
+.content {
+    padding: 20px;
+}
+
+.contacts-list {
+    border: 1px solid #ccc;
+    height: 250px;
+    overflow-y: scroll;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.contact-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #aaa;
+    margin-bottom: 5px;
+    background: #f5f5f5;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+a.contact-row:hover {
+    background: #e9e9e9;
+    cursor: pointer;
+}
+
+.contact-row.disabled {
+    background: #e0e0e0;
+    color: #888;
+}
+
+.name {
+    width: 50%;
+}
+
+.phone {
+    width: 50%;
+}
+
+.inputs-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.inputs-row input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #aaa;
+    background: #f5f5f5;
+    font-family: inherit;
+}
+
+.inputs-row.active-edit input {
+    border: 2px solid #666;
+    font-weight: bold;
+}
+
+.buttons-row {
+    display: flex;
+    gap: 10px;
+}
+
+.full-width {
+    display: flex;
+    width: 100%;
+}
+
+.btn {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #aaa;
+    background: white;
+    font-family: inherit;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    border-radius: 3px;
+}
+
+.btn:hover {
+    background: #f0f0f0;
+}
+
+.btn-block {
+    width: 100%;
+}
+
+.disabled-btn {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
