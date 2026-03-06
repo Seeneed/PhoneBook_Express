@@ -37,6 +37,10 @@ app.get('/', async (req, res) => {
     res.render('index', { contacts, disabled: false });
 });
 
+app.get('/json', (req, res) => {
+    res.sendFile(path.join(__dirname, 'contacts.json'));
+});
+
 app.get('/Add', async (req, res) => {
     const contacts = await getContacts();
     res.render('add', { contacts, disabled: true }); 
